@@ -1,14 +1,114 @@
-<doctype <!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html>
+  <html>
+
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Soccer Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="Assets/JavaScript/App.js"></script>
-</head>
-<body>
-    
-</body>
-</html>
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Soccer Trivia Quiz</h1>
+        <hr>
+        <p class="lead">You will have three minutes to correctly answer seven trivia questions about soccer. For each correct answer chosen
+          you will recieve one point.</p>
+        <p class="lead">However, for every incorrect answer you will lose a point. To win this game you will need a score of at least five
+          points.</p>
+        <p class="lead">Good Luck!</p>
+        <hr>
+        <p class="timeleft">Time Left: </p>
+        <!-- <hr> -->
+        <p class="Score">Current Score: </p>
+      </div>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        Which of the below nations have not won a World Cup title?
+      </a>
+      <a href="#" id="btn-1" class="list-group-item list-group-item-action">Spain</a>
+      <a href="#" class="list-group-item list-group-item-action">Uruguay</a>
+      <a href="#" class="list-group-item list-group-item-action">Mexico</a>
+      <a href="#" class="list-group-item list-group-item-action">France</a>
+    </div>
+    <br>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        Who were the first club to win a 'Treble'?
+      </a>
+      <a href="#" id="btn-1" class="list-group-item list-group-item-action">Manchester United</a>
+      <a href="#" class="list-group-item list-group-item-action">Juventus</a>
+      <a href="#" class="list-group-item list-group-item-action">Barcelona</a>
+      <a href="#" class="list-group-item list-group-item-action">Ajax</a>
+    </div>
+    <br>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        Which player holds the record for most Ballon d'Or awards?
+      </a>
+      <a href="#" id="btn-1" class="list-group-item list-group-item-action">Bobby Charlton</a>
+      <a href="#" class="list-group-item list-group-item-action">Lionel Messi</a>
+      <a href="#" class="list-group-item list-group-item-action">Cristiano Ronaldo</a>
+      <a href="#" class="list-group-item list-group-item-action">Thierry Henry</a>
+    </div>
+    <br>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        Who was the first English manager to win back-to-back European Cup titles?
+      </a>
+      <a href="#" id="btn" class="list-group-item list-group-item-action">Peter Taylor</a>
+      <a href="#" class="list-group-item list-group-item-action">Roy Hodgson</a>
+      <a href="#" class="list-group-item list-group-item-action">Sam Allardyce</a>
+      <a href="#" class="list-group-item list-group-item-action">Brian Clough</a>
+    </div>
+    <br>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+       What is the name of England's offical cup-final venue?
+      </a>
+      <a href="#" id="btn-1" class="list-group-item list-group-item-action">White Hart Lane</a>
+      <a href="#" class="list-group-item list-group-item-action">Wembly Stadium</a>
+      <a href="#" class="list-group-item list-group-item-action">Old Trafford</a>
+      <a href="#" class="list-group-item list-group-item-action">'The Den'</a>
+    </div>
+    <br>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        What is the farthest that the United States have reached in the World Cup Finals?
+      </a>
+      <a href="#" id="btn-1" class="list-group-item list-group-item-action">Champion</a>
+      <a href="#" class="list-group-item list-group-item-action">Semi-Finals</a>
+      <a href="#" class="list-group-item list-group-item-action">Quarter-Finals</a>
+      <a href="#" class="list-group-item list-group-item-action">Knock-Out-Round</a>
+    </div>
+    <br>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+          In what year was the English Premier League founded?
+      </a>
+      <a href="#" id="btn-1" class="list-group-item list-group-item-action">1912</a>
+      <a href="#" class="list-group-item list-group-item-action">1942</a>
+      <a href="#" class="list-group-item list-group-item-action">1962</a>
+      <a href="#" class="list-group-item list-group-item-action">1992</a>
+    </div>
+    <br>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        Which country has won the most World Cup titles?
+      </a>
+      <a href="#" id="btn-1" class="list-group-item list-group-item-action">Germany</a>
+      <a href="#" class="list-group-item list-group-item-action">Italy</a>
+      <a href="#" class="list-group-item list-group-item-action">Brazil</a>
+      <a href="#" class="list-group-item list-group-item-action">England</a>
+    </div>
+    <br>
+  </body>
+
+  </html>
